@@ -10,6 +10,8 @@ Change your database testing setting of app.php like
 ```
 
 wercker.yml example
+
+```yaml
 box: dala00/wercker-cakephp3
 services:
   - id: mysql
@@ -30,4 +32,4 @@ build:
         name: Run phpunit
         code: |-
           vendor/bin/phpunit
-
+```
